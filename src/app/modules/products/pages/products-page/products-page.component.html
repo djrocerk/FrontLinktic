@@ -1,0 +1,12 @@
+<div class="contentainer">
+    <div class="carrito">
+        <button (click)="toggleSidebarVisibility()" class="toggle-sidebar-button">
+            <mat-icon class="cart-icon" [ngClass]="{ 'closed-cart': sidebarOpen }">shopping_cart</mat-icon>
+        </button>
+    </div>
+    <div class="content">
+        <app-card-products [product]="dataProducts"></app-card-products>
+        <app-sidebar class="sidebar" [isOpen]="sidebarOpen"></app-sidebar>
+    </div>
+    
+</div>

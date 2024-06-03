@@ -1,0 +1,48 @@
+
+
+.content {
+  display: flex;
+}
+
+.carrito {
+  margin: 10px 0 0 10px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.toggle-sidebar-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    background-color: #004494;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.cart-icon {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.closed-cart {
+  color: red;
+}
+
+.sidebar {
+  position: relative;
+  margin-top: -40px;
+}
